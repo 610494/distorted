@@ -132,8 +132,9 @@ def random_dis(SAMPLE_SPEECH_DIR, SAMPLE_NOISE_LIST, TARGET_FOLDER, max_snr = 25
 if __name__=='__main__':
     # 设置路径
     SAMPLE_SPEECH_DIR = '/mnt/md1/user_wago/data/LJSpeech-1.1/wavs/'
+    MUSAN_DIR = '/mnt/md1/user_wago/data/musan'
     # SAMPLE_NOISE_LIST = ['/mnt/md1/user_wago/data/musan/speech/librivox/speech-librivox-0003.wav', '/mnt/md1/user_wago/data/musan/speech/librivox/speech-librivox-0011.wav', '/mnt/md1/user_wago/data/musan/speech/librivox/speech-librivox-0017.wav']
-    SAMPLE_NOISE_LIST = ['/mnt/md1/user_wago/data/musan/music/jamendo/music-jamendo-0011.wav', '/mnt/md1/user_wago/data/musan/noise/free-sound/noise-free-sound-0001.wav', '/mnt/md1/user_wago/data/musan/noise/free-sound/noise-free-sound-0005.wav' ,'/mnt/md1/user_wago/data/musan/noise/sound-bible/noise-sound-bible-0030.wav', '/mnt/md1/user_wago/data/musan/speech/librivox/speech-librivox-0011.wav']
+    SAMPLE_NOISE_LIST = [f'{MUSAN_DIR}/music/jamendo/music-jamendo-0011.wav', f'{MUSAN_DIR}/noise/free-sound/noise-free-sound-0001.wav', f'{MUSAN_DIR}/noise/free-sound/noise-free-sound-0005.wav', f'{MUSAN_DIR}/noise/sound-bible/noise-sound-bible-0030.wav', f'{MUSAN_DIR}/speech/librivox/speech-librivox-0011.wav']
     TARGET_FOLDER = '/mnt/md1/user_wago/data/LJSpeech-1.1/distortion/random'
     
     random_dis(SAMPLE_SPEECH_DIR, SAMPLE_NOISE_LIST, TARGET_FOLDER)
